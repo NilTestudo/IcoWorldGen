@@ -6,7 +6,7 @@ using System;
 [ExecuteInEditMode]
 public class UIGenerateWorldTectonics : MonoBehaviour
 {
-    private UIControler controler;
+    private UIWorldGenControler controler;
 
     private int continents;
     private float oceanPercentage = 0.5f, linear = 1.5f, angular = 1.5f;

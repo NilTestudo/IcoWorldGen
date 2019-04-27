@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UIControler : MonoBehaviour
+public class UIWorldGenControler : MonoBehaviour
 {
     public GameObject[] MenuItems;
 
