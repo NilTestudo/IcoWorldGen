@@ -23,7 +23,8 @@ public class UIDropdown : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     {
         container = transform.Find("Container").GetComponent<RectTransform>();
         isOpen = false;
-        
+        container.localScale = new Vector3(1, 0, 1);
+
     }
 
     // Update is called once per frame
