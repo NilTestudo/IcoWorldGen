@@ -23,6 +23,7 @@ public class UIMain : MonoBehaviour
 
     public void Options()
     {
+        //TODO: Actual Options Menu
         DestroyMessage();
         msg = Instantiate(messagePrefab);
         Text[] txt = msg.GetComponentsInChildren<Text>();
@@ -32,7 +33,15 @@ public class UIMain : MonoBehaviour
         btn.onClick.AddListener(DestroyMessage);
     }
 
-    public void DestroyMessage()
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
+    }
+
+    private void DestroyMessage()
     {
         if(msg != null)
         {
